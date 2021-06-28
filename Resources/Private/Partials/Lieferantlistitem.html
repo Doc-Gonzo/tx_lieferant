@@ -1,0 +1,19 @@
+<div class='lieferant'>
+    <div>
+        <f:for each="{lieferant}" as="lieferant">
+            <f:if condition="{lieferant.image}">
+                <f:then>
+                    <div>
+                        <f:image width="120" height="120c" treatIdAsReference="1" title="{lieferant.title}" src="{lieferant.image.originalResource.publicUrl}" />
+                    </div>
+                </f:then>
+            </f:if>
+        </f:for>
+    </div>
+    <div class="title">{lieferant.title}</div>
+    <div class="Region">{lieferant.region.title}</div>
+    <div class="lieferant_list_details_wrapper">
+        <f:link.action pageUid="39" target="_blank" action="lieferantdetail" class="lieferant_list_button btn-primary"  arguments="{lieferant:'{lieferant.uid}'}"> Details</f:link.action>
+
+    </div>
+</div>

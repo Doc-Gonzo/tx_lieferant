@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+{namespace c=Clicksgefuehle\Programmverwaltung\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<div id="lieferantlist_unfiltered_view">
+    <div id="lieferantlist" class="lieferant">
+        <h2><f:translate key="LLL:EXT:programmverwaltung/Resources/Private/Language/locallang.xlf:master" />   </h2>
+        <div class="lieferant_list_wrapper ">
+            <f:for each="{lieferants->v:iterator.sort(order: 'ASC', sortBy: 'title')}" as="lieferant">
+                <f:render partial='Lieferantlistitem' arguments='{lieferant: lieferant}' />
+        </f:for>
+        </div>
+    </div>
+
+</div>
+</html>
