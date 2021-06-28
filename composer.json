@@ -1,0 +1,20 @@
+{
+	"name": "plan2Net/lieferant",
+	"description": "ADEG Lieferant",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Mathias Schaller",
+			"email": "mathias.schaller@gmx.at"
+		}
+	],
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": {
+			"Clicksgefuehle\\Programmverwaltung\\": "Classes/"
+		}
+	},
+	"require": {
+		"typo3/cms-core": ">10.0.0"
+	}
+}
