@@ -8,6 +8,7 @@ return [
         'title' => $ll . 'lieferant_label',
         'label' => 'title',  
         'slug' => 'slug',
+        'produkte' => 'produkte',
         'region' => 'region',
         'image' => 'image',
         'tstamp' => 'tstamp',
@@ -133,6 +134,17 @@ return [
                 'eval'              => 'unique',
                 'default'           => '',
             ],
+        ],
+        'Produkte'       => [
+            'exclude' => false,
+            'label' => $ll . 'lieferant_lieferant.produkte',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true,
+                ],
+            ]
         ],
 
         'region' => [

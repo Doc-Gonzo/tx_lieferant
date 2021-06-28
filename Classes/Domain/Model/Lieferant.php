@@ -37,6 +37,25 @@ class Course extends AbstractEntity
     /** @var string */
     protected $slug = '';
 
+    /** @var string */
+    protected $produkte = '';
+
+    /**
+     * @return string
+     */
+    public function getProdukte()
+    {
+        return $this->produkte;
+    }
+
+    /**
+     * @param string $produkte
+     */
+    public function setProdukte($produkte)
+    {
+        $this->produkte = $produkte;
+    }
+
     /**
      * @var string
      */

@@ -35,6 +35,7 @@ CREATE TABLE tx_lieferant_domain_model_lieferant (
 
                                                            title varchar(255) DEFAULT '' NOT NULL,
                                                            region varchar(255) DEFAULT '' NOT NULL,
+                                                           produkte varchar(255) DEFAULT '' NOT NULL,
                                                            slug varchar(2048),
                                                            image int(11) unsigned DEFAULT '0',
 
