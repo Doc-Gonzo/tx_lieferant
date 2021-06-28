@@ -1,6 +1,5 @@
 <div class='lieferant'>
-    <div>
-        <f:for each="{lieferant}" as="lieferant">
+    <div class="lieferant_image">
             <f:if condition="{lieferant.image}">
                 <f:then>
                     <div>
@@ -8,13 +7,12 @@
                     </div>
                 </f:then>
             </f:if>
-        </f:for>
     </div>
-    <div class="title">{lieferant.title}</div>
-    <div class="produkte">{lieferant.produkte}</div>
-    <div class="region">{lieferant.region.title}</div>
-    <div class="lieferant_list_details_wrapper">
-        <f:link.action pageUid="39" target="_blank" action="lieferantdetail" class="lieferant_list_button btn-primary"  arguments="{lieferant:'{lieferant.uid}'}"> Details</f:link.action>
+    <div class="lieferant_content">
+        <div class="title">{lieferant.title}</div>
+        <div class="produkte"><span class="lieferant_label">Produkte:</span> {lieferant.produkte}</div>
+        <div class="region"><span class="lieferant_label">Region:</span> {lieferant.region.title}</div>
+    </div>
 
-    </div>
+
 </div>

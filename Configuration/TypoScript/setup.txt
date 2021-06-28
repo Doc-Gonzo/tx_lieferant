@@ -1,0 +1,4 @@
+page.includeCSS.lieferant = EXT:lieferant/Resources/Public/CSS/lieferant.css
+page.includeJS.lieferant = EXT:lieferant/Resources/Public/JavaScript/lieferant.js
+
+plugin.tx_lieferant.mvc.callDefaultActionIfActionCantBeResolved = 1

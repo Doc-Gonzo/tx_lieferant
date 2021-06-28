@@ -161,7 +161,6 @@ return [
 
                 'size' => 10,
 
-
                 'fieldInformation' => [
                     'tagInformation' => [
                         'renderType' => 'StaticText',
@@ -182,7 +181,7 @@ return [
                         'disabled' => false,
                         'options' => [
                             'type' => 'popup',
-                            'title' => $ll . 'tx_news_domain_model_news.tags.edit',
+                            'title' => $ll . 'tx_lieferant.edit',
                             'module' => [
                                 'name' => 'wizard_edit',
                             ],
